@@ -11,7 +11,7 @@ The project uses the [Ebiten](https://ebiten.org/) library for graphics handling
 To run the project, you need to have Go installed, as well as the Ebiten library. You can install Ebiten using the following command:
 
 ```bash
-go get -u github.com/hajimehoshi/ebiten/v2
+go mod download
 ```
 
 ## Usage
@@ -20,6 +20,7 @@ To run the application, navigate to the project directory and execute:
 ```bash
 go run main.go
 ```
+Create your own life using mouse and when you are done hit enter on your keyboard.
 
 ## How does it look like
 
