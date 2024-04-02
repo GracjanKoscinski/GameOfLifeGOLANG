@@ -1,4 +1,4 @@
-package GameOfLifeGOLANG
+package main
 
 var board [boardSize][boardSize]bool
 
