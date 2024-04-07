@@ -2,6 +2,8 @@
 
 This is a simple project simulating Conway's Game of Life, created for the purpose of learning the Go programming language. The project contains an application written in Go, which implements the rules of the Game of Life, along with short unit tests.
 
+## Check other branches for pre-made patterns
+
 ## Dependencies
 
 The project uses the [Ebiten](https://ebiten.org/) library for graphics handling in games.
@@ -16,10 +18,6 @@ go mod download
 
 ## Usage
 
-To run the application, navigate to the project directory and execute:
-```bash
-go run main.go
-```
 Create your own life using mouse and when you are done hit enter on your keyboard.
 
 ## How does it look like
