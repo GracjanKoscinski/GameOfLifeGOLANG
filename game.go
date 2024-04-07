@@ -12,11 +12,6 @@ type Game struct {
 }
 
 func (g *Game) Update() error {
-	if ebiten.IsMouseButtonPressed(ebiten.MouseButtonLeft) && g.state != "playing" {
-		x, y := ebiten.CursorPosition()
-		boardX, boardY := x/(screenWidth/boardSize), y/(screenHeight/boardSize)
-		board[boardX][boardY] = true
-	}
 
 	if ebiten.IsKeyPressed(ebiten.KeyEnter) && g.state != "playing" {
 		g.state = "playing"

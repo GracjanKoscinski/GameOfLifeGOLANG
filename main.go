@@ -10,7 +10,7 @@ const (
 	screenWidth        = 800
 	screenHeight       = 800
 	boardSize          = 100
-	generationInterval = time.Second
+	generationInterval = time.Second / 20
 )
 
 func main() {
@@ -21,6 +21,9 @@ func main() {
 		lastGenerationTime: time.Now(),
 		state:              "drawing",
 	}
+
+	createGosperGliderGun()
+
 	if err := ebiten.RunGame(game); err != nil {
 		log.Fatal(err)
 	}
